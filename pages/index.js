@@ -106,7 +106,11 @@ export default function Page(props){
                 <DataGridPremium columns={paymentsColumns} rows={paymentsRows} checkboxSelection={true} experimentalFeatures={{aggregation: true, newEditingApi: true}}
                     getDetailPanelContent={getDetailPanelContent} getDetailPanelHeight={() => "auto"} rowReordering={true} components={{Toolbar: GridToolbar}}  />
             </Box>
-                    </ThemeProvider>
+            <Box sx = {{height: "100vh", width: "100vw"}}>
+                 <DataGridPremium columns={[]} rows={[]} checkboxSelection={true} experimentalFeatures={{aggregation: true, newEditingApi: true}}
+                    getDetailPanelContent={getDetailPanelContent} getDetailPanelHeight={() => "auto"} rowReordering={true} components={{Toolbar: GridToolbar}}  />
+             </Box>
+                </ThemeProvider>
             </div>
 
 
